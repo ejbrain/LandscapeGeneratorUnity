@@ -28,7 +28,6 @@ public class TerrainMeshGenerator : MonoBehaviour
         UpdateTexture();
     }
     
-    // Public method to rebuild the mesh.
     public void RegenerateMesh()
     {
         Texture2D elevTexture = landscapeGenerator.GetElevationTexture();
@@ -102,7 +101,6 @@ public class TerrainMeshGenerator : MonoBehaviour
             mc.sharedMesh = mesh;
     }
     
-    // New method to update the material's main texture to the fuel classification texture.
     public void UpdateTexture()
     {
         Texture2D fuelTexture = landscapeGenerator.GetFuelClassificationTexture();
